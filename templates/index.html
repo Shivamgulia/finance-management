@@ -14,7 +14,7 @@
 
       <form
         id="incomeForm"
-        action="http://127.0.0.1:5001/incomes"
+        action="http://43.204.115.213:5001/incomes"
         method="post"
       >
         <label for="name">Name:</label>
@@ -33,7 +33,7 @@
       <h2>Expense Form</h2>
       <form
         id="expenseForm"
-        action="http://127.0.0.1:5001/expenses"
+        action="http://43.204.115.213:5001/expenses"
         method="post"
       >
         <label for="name">Name:</label>
@@ -125,7 +125,7 @@
       }
 
       function getNewData() {
-        fetch("http://127.0.0.1:5001/incomesexpenses")
+        fetch("http://43.204.115.213:5001/incomesexpenses")
           .then((response) => response.json())
           .then((data) => {
             // Handle response from server
